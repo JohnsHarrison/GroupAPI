@@ -54,3 +54,12 @@
   justify-content: space-evenly;
   margin-bottom: 10px;
 }
+
+.posterdh{
+  height: 300px;
+}
+
+.poster-container-dh{
+  display: flex;
+  flex-wrap: wrap;
+}
