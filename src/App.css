@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+ max-width: 100vw;
+ height: 100%;
+ width: 100%;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.Infojh{
+  align-content: center;
+  width: 50%;
+  font-size: 1.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.currentimgjh{
+  height: 95%;
+  width: 40%;
+  padding: 10px;
+}
+
+
+.Containerjsh{
+  border-style: solid;
+  border-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.MovieContainerjh{
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 70%;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.MovieContainer2jh{
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  height: 70%;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
