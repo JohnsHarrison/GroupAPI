@@ -10,10 +10,10 @@ function ButtonWilson(){
     }
     return(
         <div>
-            <img src={image}></img>
-            <button onClick={()=>{
+            <img className="OwenWilson" alt='' src={image} onClick={()=>{
                 handleClick()
-            }} >Button</button>
+            }}></img>
+
         </div>       
     )
 }
