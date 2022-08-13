@@ -14,7 +14,14 @@ return response
 }
 
 export async function getStreaming(id){
-const response = await axios.get(`https://api.watchmode.com/v1/title/${id}/sources/?${process.env.REACT_APP_API_KEY2}`)
+const response = await axios.get(`https://api.watchmode.com/v1/title/${id}/sources/?apiKey=${process.env.REACT_APP_API_KEY2}`)
+console.log(response)
+return response
+}
+
+//owen wilson
+export async function getWow(){
+const response = await axios.get('https://owen-wilson-wow-api.herokuapp.com/wows/random')
 console.log(response)
 return response
 }

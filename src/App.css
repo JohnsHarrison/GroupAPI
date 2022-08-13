@@ -1,5 +1,4 @@
 .App {
-  display: flex;
   text-align: center;
  max-width: 100vw;
  height: 100%;
@@ -22,8 +21,8 @@
 
 
 .Containerjsh{
-  border-style: solid;
-  border-color: black;
+  /* border-style: solid;
+  border-color: black; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -33,8 +32,8 @@
 }
 
 .MovieContainerjh{
-  border-style: solid;
-  border-color: black;
+  /* border-style: solid;
+  border-color: black; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -44,8 +43,8 @@
   margin-bottom: 10px;
 }
 .MovieContainer2jh{
-  border-style: solid;
-  border-color: black;
+  /* border-style: solid;
+  border-color: black; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
@@ -53,4 +52,13 @@
   width: 100%;
   justify-content: space-evenly;
   margin-bottom: 10px;
+}
+
+.posterdh{
+  height: 300px;
+}
+
+.poster-container-dh{
+  display: flex;
+  flex-wrap: wrap;
 }
