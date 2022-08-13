@@ -1,17 +1,18 @@
 import './App.css';
-import { getPlaying } from './Services/api';
+import { getPlaying, getStreaming,getStreamingID } from './Services/api';
 import CurrentlyPlaying from './Components/CurrentlyPlaying'
-// console.log(process.env.REACT_APP_API_KEY1)
+import Streaming from './Components/Streaming';
 
 
-getPlaying()
-// console.log(getPlaying())
-// console.log(getPlaying2())
+const word= "simpsons"
+
+
 function App() {
 
   return (
     <div className="App">
-     <CurrentlyPlaying></CurrentlyPlaying>
+     {/* <CurrentlyPlaying></CurrentlyPlaying> */}
+     <Streaming></Streaming>
        
     </div>
   );
