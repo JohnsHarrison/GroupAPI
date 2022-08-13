@@ -20,7 +20,7 @@
 }
 
 
-.Containerjsh{
+.Containerjh{
   /* border-style: solid;
   border-color: black; */
     display: flex;
@@ -61,4 +61,18 @@
 .poster-container-dh{
   display: flex;
   flex-wrap: wrap;
+}
+
+.ServiceContainerjh{
+  border-style: solid;
+  width: 17%;
+  margin: auto;
+  margin-top: 5px;
+  padding: 22px;
+}
+
+.OwenWilson{
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
 }
