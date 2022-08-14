@@ -10,7 +10,6 @@ useEffect(()=>{
     async function fetchData(id){
     const response = await getTrailer(id)
     const results = response.data
-    console.log(results)
     setTrailer(results)
     }
     fetchData(id)
