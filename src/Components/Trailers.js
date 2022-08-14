@@ -18,7 +18,7 @@ useEffect(()=>{
 
 
     return(
-        <div>
+        <div className="trailer">
             { trailer ===null ? null :<>
            <h1>{trailer.title}</h1>
            <h2>{trailer.videoTitle}</h2>

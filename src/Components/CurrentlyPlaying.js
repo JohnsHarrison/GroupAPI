@@ -25,7 +25,7 @@ function handleClick(id){
                 <p>{result.genres}</p>
                 <p>IMDB rating: {result.imDbRating} |  Metacritic rating: {result.metacriticRating} | Runtime: {result.runtimeStr}</p>
                 <p>{result.plot}</p>
-                <button onClick={()=>{handleClick(result.id)}} >TRAILER</button>
+                <button onClick={()=>{handleClick(result.id)}} >SEE TRAILER</button>
                 
                 </div>
             </div>
