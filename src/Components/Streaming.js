@@ -1,21 +1,16 @@
-import { useState,useEffect } from "react";
-import { getStreaming,getStreamingID } from "../Services/api";
-import {useNavigate} from 'react-router-dom'
+import { useState,} from "react";
+import { getStreamingID } from "../Services/api";
 import { Link } from "react-router-dom";
 
 function Streaming(){
-const [more,setMore] = useState(false)
 const [results,setResults] = useState(null)
-const [streaming,setStreaming] = useState([])
 const [word,setWord] = useState('')
 
 
 console.log(word)
 async function handleClick(word){
    const response= await (await getStreamingID(word)).data.title_results
-   console.log(response)
    setResults(response)
-   setStreaming(response.id)
 }
 
 
@@ -24,11 +19,11 @@ async function handleClick(word){
         <div>
             <input type="text" value={word} onChange ={ e =>{
                 let input = e.target.value
-                setWord(input)}} placeholder="Text"/>
+                setWord(input)}} placeholder="Movie or TV Show"/>
 
             <button onClick={()=>{
                 handleClick(word)
-            }}>Search</button>
+            }}>Search Streaming</button>
              <h1> {results === null ? null : "Did you mean?" } </h1>
             
              {

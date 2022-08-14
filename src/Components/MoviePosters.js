@@ -1,34 +1,39 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import { getData, getPosters } from "../Services/api"
 
 function MoviePosters() {
+const [posters, setPosters] = useState([])
+const [word,setWord] = useState('')
 
-    const [posters, setPosters] = useState([])
+async function handleClick(word){
+   const id = await (await getData(word)).data.results[0].id
+   
+   const list = await(await getPosters(id)).data.posters
+   
+   const mappedPosters = list.map((poster,index)=>{
+    return(
+             <div key={index} >
+                 <img className="posterdh" src={poster.link} alt='poster'/>
+             </div>
+         )
+   })
+   setPosters(mappedPosters)
 
-    async function getPosters() {
-        const response = await axios.get(`https://imdb-api.com/en/API/Posters/${process.env.REACT_APP_API_KEY1}/tt1375666`)
+}
+    return(
+        
+        <div>
 
-        console.log(response)
+        <input type="text" value={word} onChange ={ e =>{
+                let input = e.target.value
+                setWord(input)}} placeholder="Movie or TV Show"/>
 
-        const mappedPosters = response.data.posters.map((poster) => {
-            return (
-                <div >
-                    <img className="posterdh" src={poster.link} alt='poster' />
-                </div>
-            )
-        })
-
-        console.log(mappedPosters)
-        setPosters(mappedPosters)
-    }
-
-    useEffect(() => {
-        getPosters()
-    }, [])
-
-    return (
-        <div className="poster-container-dh">
-            {posters}
+        <button onClick={()=>{
+            handleClick(word)
+        }}>Search Posters</button>
+            <div className="poster-container-dh"> 
+                {posters}
+            </div>
         </div>
     )
 }

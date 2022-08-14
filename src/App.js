@@ -7,8 +7,14 @@ import MoviePosters from './Components/MoviePosters'
 import Streaming from './Components/Streaming';
 import Streams from './Components/Streams';
 import ButtonWilson from './Components/ButtonWilson';
+<<<<<<< HEAD
 import About from './Components/About';
 import NotFound from './Components/NotFound';
+=======
+import Trailer from './Components/Trailers';
+
+
+>>>>>>> accc737793b92c8ead66a54a3f072bfc89838d42
 
 function App() {
 
@@ -18,12 +24,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/currently-playing' element={<CurrentlyPlaying/>}/>
+        <Route path='currently-playing/trailer/:id' element={<Trailer/>}/>
         <Route path='/movie-posters' element={<MoviePosters/>}/>
         <Route path='/streaming' element={<Streaming/>}/>
         <Route path='/streaming/:id'element={<Streams/>}/>
         <Route path='/wow' element={<ButtonWilson/>}/>
         <Route path="*" element={<NotFound />}></Route>
         <Route path="/about" element={<About />}></Route>
+
 
      </Routes>
 

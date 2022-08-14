@@ -18,11 +18,12 @@ body {
 nav {
   display: flex;
   justify-content: center;
-  background: rgb(48,48,48);
-  background: linear-gradient(135deg, rgba(48,48,48,1) 6%, rgba(48,48,48,0.8858893899356618) 20%, rgba(48,48,48,1) 32%, rgba(48,48,48,0.9110994739692753) 43%, rgba(48,48,48,1) 57%, rgba(48,48,48,0.8970938717283788) 70%, rgba(48,48,48,1) 82%, rgba(48,48,48,0.8522759445575105) 100%);
+  background: rgb(48, 48, 48);
+  background: linear-gradient(135deg, rgba(48, 48, 48, 1) 6%, rgba(48, 48, 48, 0.8858893899356618) 20%, rgba(48, 48, 48, 1) 32%, rgba(48, 48, 48, 0.9110994739692753) 43%, rgba(48, 48, 48, 1) 57%, rgba(48, 48, 48, 0.8970938717283788) 70%, rgba(48, 48, 48, 1) 82%, rgba(48, 48, 48, 0.8522759445575105) 100%);
 
   border-top: 3px dashed #282828;
   border-bottom: 3px dashed #282828;
+  margin-bottom: 15px;
 }
 
 
@@ -35,8 +36,8 @@ nav {
   text-decoration: none;
   font-family: 'Comfortaa', cursive;
   font-size: 25px;
-  background: rgb(240,192,48);
-  background: linear-gradient(135deg, rgba(240,192,48,1) 47%, rgba(191,149,0,1) 94%, rgba(144,109,0,1) 100%);
+  background: rgb(240, 192, 48);
+  background: linear-gradient(135deg, rgba(240, 192, 48, 1) 47%, rgba(191, 149, 0, 1) 94%, rgba(144, 109, 0, 1) 100%);
   border-radius: 2px;
   height: 2em;
   width: 10em;
@@ -44,12 +45,12 @@ nav {
   margin: 10px;
 }
 
-.header a:hover{
+.header a:hover {
   outline: groove 5px #f0f0f0;
 
   text-shadow: 1px 1px 5px #e1ff59;
   color: white;
-  transition: outline .2s, text-shadow .1s ;
+  transition: outline .2s, text-shadow .1s;
 }
 
 
@@ -228,11 +229,23 @@ nav {
   margin-top: 20px;
   width: 222px;
   height: 211px;
-    filter: drop-shadow(-8px 8px 10px gray);
+  filter: drop-shadow(-8px 8px 10px gray);
 }
 
-.textlogo{
-      filter: drop-shadow(-8px 8px 10px gray);
+.textlogo {
+  filter: drop-shadow(-8px 8px 10px gray);
+}
+
+button {
+  border: 0px solid #282828;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #d6d4d4;
+  ;
 }
 
 .Infojh {
@@ -244,7 +257,7 @@ nav {
 
 .currentimgjh {
   height: 95%;
-  width: 40%;
+  width: 33%;
   padding: 10px;
 }
 
@@ -262,34 +275,80 @@ nav {
 .MovieContainerjh {
   /* border-style: solid;
   border-color: black; */
+  font-family: 'Comfortaa', cursive;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
   height: 70%;
   width: 100%;
   justify-content: space-evenly;
   margin-bottom: 10px;
+  color: #303030;
+  text-shadow: -1px 1px black;
 }
 
 .MovieContainer2jh {
   /* border-style: solid;
   border-color: black; */
+  font-family: 'Comfortaa', cursive;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  align-items: center;
   height: 70%;
   width: 100%;
   justify-content: space-evenly;
   margin-bottom: 10px;
+  color: #303030;
+  text-shadow: -1px 1px black;
+}
+
+.movietitle {
+  color: #f0c030;
+  text-shadow: 2px 2px 2px #303030;
+}
+
+.trailer {
+  font-family: 'Comfortaa', cursive;
+  color: #303030;
+  text-shadow: -1px 1px black;
+}
+
+.trailer h1 {
+  color: #f0c030;
+  text-shadow: 2px 2px 2px #303030;
+margin-top: 55px;
+font-size: 40px;
+}
+
+.trailer h2 {
+
+  margin-bottom: 30px;
+  font-size:25px;
+  font-family: 'Comfortaa', cursive;
+  font-style: italic;
+}
+
+.trailer h3 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+}
+
+iframe {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .posterdh {
   height: 300px;
+  padding: 10px;
 }
 
 .poster-container-dh {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ServiceContainerjh {
@@ -300,8 +359,17 @@ nav {
   padding: 22px;
 }
 
+.WilsonContainer {
+  background-image: url('./Images/WOW.jpg');
+  background-size: 100%;
+  height: 86.7vh;
+  width: 100%;
+  position: absolute;
+
+}
+
 .OwenWilson {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 95%;
   cursor: pointer;
 }
