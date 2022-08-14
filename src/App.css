@@ -18,8 +18,9 @@ body {
 nav {
   display: flex;
   justify-content: space-evenly;
-
+  padding: 40px;
 }
+
 
 .header a {
   color: #f07818;
@@ -36,34 +37,127 @@ nav {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes slideFromRight{
-  0% {left:1500px}
-  100% { left: 0; }
+@keyframes slideFromRight {
+  0% {
+    left: 1500px
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
-@keyframes slideFromLeft{
-  0% {right:1500px}
-  50% {right: 1500px}
-  100% { right: 0; }
+@keyframes slideFromLeft {
+  0% {
+    right: 1500px
+  }
+
+  50% {
+    right: 1500px
+  }
+
+  100% {
+    right: 0;
+  }
 }
 
-@keyframes slideFromRight2{
-  0% {left:2500px}
-  50% {left: 2500px}
-  100% { left: 0; }
+@keyframes slideFromRight2 {
+  0% {
+    left: 2500px
+  }
+
+  50% {
+    left: 2500px
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
-@keyframes slideFromLeft2{
-  0% {right:3000px}
-  50% {right: 3000px}
-  100% { right: 0; }
+@keyframes slideFromLeft2 {
+  0% {
+    right: 3000px
+  }
+
+  50% {
+    right: 3000px
+  }
+
+  100% {
+    right: 0;
+  }
 }
 
-.pcontainerhome1{
+@keyframes trailRight {
+  0% {
+    border-right: 200px solid black
+  }
+
+  50% {
+    border-right: 200px solid black
+  }
+
+  100% {
+    border-right: 0px solid #f0f0f0
+  }
+}
+
+@keyframes trailLeft {
+  0% {
+    border-left: 200px solid black
+  }
+
+  50% {
+    border-left: 200px solid black
+  }
+
+  100% {
+    border-left: 0px solid #f0f0f0
+  }
+}
+
+.pcontainerhome1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 1100px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  margin: 20px;
+  margin-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  animation: fadeIn 1s, slideFromRight 1.5s, trailRight 1.2s;
+}
+
+.pcontainerhome2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 1100px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  animation: fadeIn 1s 1s, slideFromLeft 2s, trailLeft 2.2s;
+
+}
+
+.pcontainerhome3 {
   position: relative;
   display: flex;
   align-items: center;
@@ -74,10 +168,12 @@ nav {
   margin: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  animation: fadeIn 1s, slideFromRight 1.5s ;
+  animation: slide 0.5s;
+  animation: fadeIn 1.5s 1.5s, slideFromRight2 3s, trailRight 3.3s;
+
 }
 
-.pcontainerhome2{
+.pcontainerhome4 {
   position: relative;
   display: flex;
   align-items: center;
@@ -86,56 +182,27 @@ nav {
   background-color: #f0f0f0;
   border-radius: 20px;
   margin: 20px;
-  animation: fadeIn 5s;
+  margin-bottom: 100px;
   padding-left: 20px;
   padding-right: 20px;
-  animation: fadeIn 1s 1s, slideFromLeft 2s ;
-
-}
-.pcontainerhome3{
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 200px;
-  width: 1100px;
-  background-color: #f0f0f0;
-  border-radius: 20px;
-  margin: 20px;
-  animation: fadeIn 5s;
-  padding-left: 20px;
-  padding-right: 20px;
-  animation: slide 0.5s ;
-  animation: fadeIn 1.5s 1.5s, slideFromRight2 3s ;
-
-}
-.pcontainerhome4{
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 200px;
-  width: 1100px;
-  background-color: #f0f0f0;
-  border-radius: 20px;
-  margin: 20px;
-  animation: fadeIn 5s;
-  padding-left: 20px;
-  padding-right: 20px;
-  animation: fadeIn 2s 2.5s, slideFromLeft2 4s ;
+  animation: fadeIn 2s 2.5s, slideFromLeft2 4s, trailLeft 4.5s;
 
 }
 
 .home p {
   font-family: 'Comfortaa', cursive;
   font-size: 44px;
-  text-shadow: 1px 3px 5px ;
-  color:#303030;
+  text-shadow: 1px 3px 5px;
+  color: #303030;
 }
 
-.yellowtext{
-  color:#f0c030
+.yellowtext {
+  color: #f0c030;
+  text-shadow: 1px 3px 5px #f07818;
 }
 
 .buffalo {
+  margin-top: 20px;
   width: 222px;
   height: 211px;
 }
@@ -153,18 +220,18 @@ nav {
   padding: 10px;
 }
 
-.Containerjh{
+.Containerjh {
   /* border-style: solid;
   border-color: black; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
-.MovieContainerjh{
+.MovieContainerjh {
   /* border-style: solid;
   border-color: black; */
   display: flex;
@@ -176,10 +243,9 @@ nav {
   margin-bottom: 10px;
 }
 
-.MovieContainer2jh{
+.MovieContainer2jh {
   /* border-style: solid;
   border-color: black; */
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
@@ -198,7 +264,7 @@ nav {
   flex-wrap: wrap;
 }
 
-.ServiceContainerjh{
+.ServiceContainerjh {
   border-style: solid;
   width: 17%;
   margin: auto;
@@ -206,7 +272,7 @@ nav {
   padding: 22px;
 }
 
-.OwenWilson{
+.OwenWilson {
   width: 50%;
   height: 50%;
   cursor: pointer;
