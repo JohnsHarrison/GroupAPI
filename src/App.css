@@ -342,11 +342,13 @@ iframe {
 
 .posterdh {
   height: 300px;
+  padding: 10px;
 }
 
 .poster-container-dh {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ServiceContainerjh {
