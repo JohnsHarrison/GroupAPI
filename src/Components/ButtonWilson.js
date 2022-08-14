@@ -1,5 +1,5 @@
 import { getWow } from "../Services/api";
-import image from "../assets/OwenWilson.png"
+import image from "../Images/OwenWilson.png"
 
 function ButtonWilson(){
     async function handleClick(){
@@ -9,7 +9,7 @@ function ButtonWilson(){
     sound.play()
     }
     return(
-        <div>
+        <div className="WilsonContainer">
             <img className="OwenWilson" alt='' src={image} onClick={()=>{
                 handleClick()
             }}></img>

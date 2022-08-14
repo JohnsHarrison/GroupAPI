@@ -300,8 +300,17 @@ nav {
   padding: 22px;
 }
 
+.WilsonContainer{
+background-image: url('./Images/WOW.jpg');
+background-size: 100%;
+height: 86.7vh;
+width: 100%;
+position: absolute;
+
+}
+
 .OwenWilson {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 95%;
   cursor: pointer;
 }
