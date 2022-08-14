@@ -30,7 +30,7 @@ async function handleClick(word){
 
         <button onClick={()=>{
             handleClick(word)
-        }}>Search</button>
+        }}>Search Posters</button>
             <div className="poster-container-dh"> 
                 {posters}
             </div>
