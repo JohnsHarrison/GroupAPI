@@ -1,0 +1,135 @@
+.PageContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .titleContainer {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .imageContainer {
+    position: relative;
+    margin-top: 100px;
+    
+  }
+  .imageContainer img {
+    transform: scale(0.6);
+  }
+  .buttonContainer a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .buttonContainer {
+    display: flex;
+    position: absolute;
+    gap: 300px;
+    left: 229px;
+    right: auto;
+    top: 584px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .buttonContainer .btn1,
+  .btn2 {
+    border-radius: 50% 50% 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    padding: 7px 24px;
+    transform: scale(1.25);
+   
+    cursor: pointer;
+  }
+  .btn1:hover,
+  .btn2:hover {
+    transform: scale(1.4);
+    transition: all .4s ease-out;
+    color: white;
+  }
+  .btn1 {
+    background-color: blue;
+    -webkit-box-shadow: 3px 1px 23px 9px #1036FF; 
+  box-shadow: 3px 1px 23px 9px #1036FF;
+  }
+  .btn2 {
+    background-color: red;
+    -webkit-box-shadow: 3px 1px 23px 9px #FF3131; 
+  box-shadow: 3px 1px 23px 9px #FF3131;
+  }
+  
+  .waviy {
+    position: absolute;
+    top: 40px;
+    color: white !important;
+    z-index: 12222 !important;
+  }
+  .waviy .a {
+    animation-delay: calc(.25s * 1);
+  }
+  .waviy .b {
+    animation-delay: calc(.25s * 2);
+  }
+  .waviy .c {
+    animation-delay: calc(.25s * 3);
+  }
+  .waviy .d {
+    animation-delay: calc(.25s * 4);
+  }
+  .waviy .e {
+    animation-delay: calc(.25s * 5);
+  }
+  .waviy .f {
+    animation-delay: calc(.25s * 6);
+  }
+  .waviy .g {
+    animation-delay: calc(.25s * 7);
+  }
+  .waviy .h {
+    animation-delay: calc(.25s * 8);
+  }
+  
+  .waviy .j {
+    animation-delay: calc(.25s * 10);
+  }
+  .waviy .k {
+    animation-delay: calc(.25s * 11);
+  }
+  .waviy .l {
+    animation-delay: calc(.25s * 12);
+  }
+  
+  .waviy .n {
+    animation-delay: calc(.25s * 13);
+  }
+  .waviy .o {
+    animation-delay: calc(.25s * 14);
+  }
+  .waviy .p {
+    animation-delay: calc(.25s * 15);
+  }
+  .waviy .q {
+    animation-delay: calc(.25s * 16);
+  }
+  .waviy .r {
+    animation-delay: calc(.25s * 17);
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    animation: flip 3.7s infinite;
+  }
+  @keyframes flip {
+    90%,
+    0% {
+      transform: rotateY(360deg);
+    }
+  }
+  

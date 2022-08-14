@@ -7,8 +7,8 @@ import MoviePosters from './Components/MoviePosters'
 import Streaming from './Components/Streaming';
 import Streams from './Components/Streams';
 import ButtonWilson from './Components/ButtonWilson';
-
-
+import About from './Components/About';
+import NotFound from './Components/NotFound';
 
 function App() {
 
@@ -22,6 +22,8 @@ function App() {
         <Route path='/streaming' element={<Streaming/>}/>
         <Route path='/streaming/:id'element={<Streams/>}/>
         <Route path='/wow' element={<ButtonWilson/>}/>
+        <Route path="*" element={<NotFound />}></Route>
+        <Route path="/about" element={<About />}></Route>
 
      </Routes>
 
