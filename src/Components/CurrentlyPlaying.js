@@ -1,10 +1,17 @@
 import { useState,useEffect } from "react";
 import { getPlaying } from "../Services/api";
+import { useNavigate } from "react-router-dom";
 
 function CurrentlyPlaying(){
 const [playing,setPlaying] = useState([])
+const navigate = useNavigate()
 
 async function displayMovies(){
+
+function handleClick(id){
+ navigate(`trailer/${id}`)
+}
+    
     const movies = await (await getPlaying()).data.items
     console.log(movies)
     const mappedMovies = movies.map((result,index)=>{
@@ -18,6 +25,7 @@ async function displayMovies(){
                 <p>{result.genres}</p>
                 <p>IMDB rating: {result.imDbRating} |  Metacritic rating: {result.metacriticRating} | Runtime: {result.runtimeStr}</p>
                 <p>{result.plot}</p>
+                <button onClick={()=>{handleClick(result.id)}} >TRAILER</button>
                 
                 </div>
             </div>
