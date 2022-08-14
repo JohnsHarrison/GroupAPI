@@ -19,7 +19,7 @@ async function handleClick(word){
         <div>
             <input type="text" value={word} onChange ={ e =>{
                 let input = e.target.value
-                setWord(input)}} placeholder="Text"/>
+                setWord(input)}} placeholder="Movie or TV Show"/>
 
             <button onClick={()=>{
                 handleClick(word)
