@@ -1,7 +1,8 @@
 import {NavLink} from 'react-router-dom'
 
 function Header() {
-    return(<div>
+    return(<div className='header'>
+
 
         <nav>
             <NavLink to='/'>Home</NavLink>
