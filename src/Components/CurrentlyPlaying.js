@@ -33,7 +33,7 @@ useEffect(()=>{
 },[])
 
     return(
-        <div className="Containerjsh">
+        <div className="Containerjh">
             {playing}
         </div>
     )

@@ -153,21 +153,20 @@ nav {
   padding: 10px;
 }
 
-
-.Containerjsh {
-  border-style: solid;
-  border-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  justify-content: space-evenly;
+.Containerjh{
+  /* border-style: solid;
+  border-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.MovieContainerjh {
-  border-style: solid;
-  border-color: black;
+.MovieContainerjh{
+  /* border-style: solid;
+  border-color: black; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -177,9 +176,10 @@ nav {
   margin-bottom: 10px;
 }
 
-.MovieContainer2jh {
-  border-style: solid;
-  border-color: black;
+.MovieContainer2jh{
+  /* border-style: solid;
+  border-color: black; */
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
@@ -196,4 +196,18 @@ nav {
 .poster-container-dh {
   display: flex;
   flex-wrap: wrap;
+}
+
+.ServiceContainerjh{
+  border-style: solid;
+  width: 17%;
+  margin: auto;
+  margin-top: 5px;
+  padding: 22px;
+}
+
+.OwenWilson{
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
 }

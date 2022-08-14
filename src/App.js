@@ -1,17 +1,15 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-
-import { getPlaying } from './Services/api';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import CurrentlyPlaying from './Components/CurrentlyPlaying';
 import MoviePosters from './Components/MoviePosters'
-// console.log(process.env.REACT_APP_API_KEY1)
+import Streaming from './Components/Streaming';
+import Streams from './Components/Streams';
+import ButtonWilson from './Components/ButtonWilson';
 
 
-// getPlaying()
-// console.log(getPlaying())
-// console.log(getPlaying2())
+
 function App() {
 
   return (
@@ -21,8 +19,12 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/currently-playing' element={<CurrentlyPlaying/>}/>
         <Route path='/movie-posters' element={<MoviePosters/>}/>
+        <Route path='/streaming' element={<Streaming/>}/>
+        <Route path='/streaming/:id'element={<Streams/>}/>
+        <Route path='/wow' element={<ButtonWilson/>}/>
 
      </Routes>
+
        
     </div>
   );
