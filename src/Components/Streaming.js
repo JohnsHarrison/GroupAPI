@@ -9,14 +9,10 @@ const [word,setWord] = useState('')
 
 
 async function handleClick(word){
-   if(word === ''){
-   return alert("Please enter a word and try again")
-   }
+   
    const response= await (await getStreamingID(word)).data.title_results
   
-   if(!response[0]){
-    return alert("Please check your spelling and try again")
-   }
+   
    setResults(response) 
 }
 
