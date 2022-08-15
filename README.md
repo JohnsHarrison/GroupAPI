@@ -1,6 +1,6 @@
 
 
-![buff](https://user-images.githubusercontent.com/25209405/184566102-36bbe0eb-4364-44b2-9ae2-29e1aa438adf.png)
+![buff](/src/Images/bufflogoReadMe.png)
 
 
 
