@@ -17,11 +17,11 @@ import { useEffect } from 'react';
       <div className="logoContainer">
         <img src={buff} alt="" />
       </div>
-      <div class="fade"></div>
-      <section class="star-wars">
-        <div class="crawl">
+      <div className="fade"></div>
+      <section className="star-wars">
+        <div className="crawl">
           
-          <div class="title">
+          <div className="title">
             <h1>Welcome to MOVIE BUFFalo!</h1>
           </div>
 
@@ -32,9 +32,9 @@ import { useEffect } from 'react';
           </p>
           
         </div>
-      <div id="nc-main" class="nc-main bg-cover bg-cc">
-        <div class="full-wh">
-          <div class="bg-animation">
+      <div id="nc-main" className="nc-main bg-cover bg-cc">
+        <div className="full-wh">
+          <div className="bg-animation">
             <div id="stars"></div>
             <div id="stars2"></div>
             <div id="stars3"></div>
