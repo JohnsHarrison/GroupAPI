@@ -9,6 +9,8 @@ function Header() {
                 <NavLink to='/movie-posters'>Movie Posters</NavLink>
                 <NavLink to='/streaming'>Streaming</NavLink>
                 <NavLink to='/wow'>Wow</NavLink>
+                <NavLink to='/About'>About</NavLink>
+
             </nav>
         </div>
     )
