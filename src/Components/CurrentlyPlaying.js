@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function CurrentlyPlaying(){
 const [playing,setPlaying] = useState([])
 const navigate = useNavigate()
-
+useEffect(()=>{
 async function displayMovies(){
 
 function handleClick(id){
@@ -13,7 +13,7 @@ function handleClick(id){
 }
     
     const movies = await (await getPlaying()).data.items
-    console.log(movies)
+ 
     const mappedMovies = movies.map((result,index)=>{
         return(
                 <div className= {index % 2 === 0 ? "MovieContainerjh" : "MovieContainer2jh" } key = {index}>
@@ -37,9 +37,8 @@ setPlaying(mappedMovies)
 }
 
 
-useEffect(()=>{
     displayMovies()
-},[])
+},[navigate])
 
     return(
         <div className="Containerjh">
