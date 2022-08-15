@@ -23,7 +23,7 @@ useEffect(()=>{
            <h1>{trailer.title}</h1>
            <h2>{trailer.videoTitle}</h2>
            <h3>"{trailer.videoDescription}"</h3>
-            <iframe title="trailer" src={trailer.linkEmbed} width="700" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="no" scrolling="no"></iframe>
+            <iframe title="trailer" src={trailer.linkEmbed} width="900" height="450" allowFullScreen={true} mozallowfullscreen="true" webkitallowfullscreen="true" frameBorder="no" scrolling="no"></iframe>
           </>
           }
        

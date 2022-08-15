@@ -15,7 +15,7 @@ const {id} = useParams();
             const response = await getStreaming(id)
             const results = response.data
             const mappedResults = results.map((result,index)=>{
-                return (<div className="ServiceContainerjh">
+                return (<div key={index} className="ServiceContainerjh">
                             <h3 style={{textDecoration: "underline"}}>{result.name} {result.type==="sub" ? "(subscrition)": null}</h3>
                             <h4>{ result.episodes === null ? "" : "Episodes:" + result.episodes}</h4>
                             <p>{result.episodes === null ? (result.type).toUpperCase() + " IN " + (result.format).toUpperCase() + " FORMAT" : null }</p>
