@@ -32,7 +32,7 @@ const {id} = useParams();
             setServices(mappedResults)
         }
    fetchData(id)
-    },[])
+    },[id])
 
 
 return(

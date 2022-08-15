@@ -13,7 +13,7 @@ useEffect(()=>{
     setTrailer(results)
     }
     fetchData(id)
-},[])
+},[id])
 
 
 
