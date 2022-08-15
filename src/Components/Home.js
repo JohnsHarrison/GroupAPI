@@ -1,5 +1,4 @@
 
-
 function Home() {
     return (
 
@@ -10,10 +9,6 @@ function Home() {
             <div className="pcontainerhome2"><p>See what's at the cinema <span className="yellowtext">right now.</span></p></div>
             <div className="pcontainerhome3"><p>Search through <span className="yellowtext">promotional posters</span> for your favorite movies.</p></div>
             <div className="pcontainerhome4"><p>Check if a movie or TV show is <span className="yellowtext">available for streaming,</span> and where. </p></div>
-
-
-
-
         </div>
     )
 }
