@@ -1,6 +1,6 @@
 
 
-![buff](/src/Images/bufflogo6.png  | width=400)
+![buff](/src/Images/bufflogoReadMe.png)
 
 
 
