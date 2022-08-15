@@ -1,5 +1,5 @@
 import React from 'react';
-import buff from '../Images/buff.png';
+import buff from '../Images/bufflogo6.png';
 import '../StylesAd/about.css'
 import { useEffect } from 'react';
 
