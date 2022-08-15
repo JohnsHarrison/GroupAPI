@@ -1,9 +1,17 @@
 import React from 'react';
 import buff from '../Images/buff.png';
 import '../StylesAd/about.css'
+import { useEffect } from 'react';
 
 
  function About() {
+  useEffect(()  => {
+    document.body.classList.add('about-bg');
+
+    return () => {
+        document.body.classList.remove('about-bg');
+    };
+});
   return (
     <div className="aboutContainer">
       <div className="logoContainer">
