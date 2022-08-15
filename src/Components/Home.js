@@ -3,7 +3,7 @@ function Home() {
     return (
 
         <div className="home">
-            <img className="buffalo" src={require("../Images/bufflogo.png")} alt="buffalogo" />
+            <img className="buffalo" src={require("../Images/bufflogo6.png")} alt="buffalogo" />
             <img className="textlogo" src={require("../Images/textlogo.png")} alt="MOVIE BUFFALO" />
             <div className="pcontainerhome1"><p>We made <span className="yellowtext"> Movie Buffalo </span>for the Movie Buffs out there.</p></div>
             <div className="pcontainerhome2"><p>See what's at the cinema <span className="yellowtext">right now.</span></p></div>
