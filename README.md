@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![buff](https://user-images.githubusercontent.com/25209405/184566102-36bbe0eb-4364-44b2-9ae2-29e1aa438adf.png)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Project Title
+                         MOVIE BUFFalo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ A movie app meant to be a one-stop-shop. Has awesome features such as letting you know which movies are currently out, as well as giving you the option to search for and stream a movie of your choosing.                
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CURRENTLY PLAYING
+    :displays movies currently out in theaters
 
-### `npm run build`
+MOVIE POSTERS
+    :search for promotional posters
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+STREAMING
+    :input a movie/show and returns a catalogue of info on where to watch
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    
+## GIF
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![buffgif](https://user-images.githubusercontent.com/25209405/184562631-214ed4fb-e70f-4fad-8192-d1d3cde3f7ba.gif)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
+![Screenshot (202)](https://user-images.githubusercontent.com/25209405/184560944-7e490088-05a8-4812-a221-432392bf997b.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screenshot (204)](https://user-images.githubusercontent.com/25209405/184560950-668d5296-0359-47ac-a5ed-3eef6968ccf4.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot (203)](https://user-images.githubusercontent.com/25209405/184560940-59f49532-af58-4839-a9d2-bcec4aac1bfd.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screenshot (205)](https://user-images.githubusercontent.com/25209405/184560943-3951f491-5809-4e0a-9deb-a78ffc97c1ce.png)
 
-## Learn More
+![Screenshot (206)](https://user-images.githubusercontent.com/25209405/184561065-53858734-c5e2-46ca-a761-bec8bdcf5a84.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## API Reference
+(api for posters)
+https://www.themoviedb.org/documentation/api
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+(api for currently playing/trailers)
+https://imdb-api.com/api
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+(api for streaming services)
+https://api.watchmode.com/docs/
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+(owen wilson -WOW)
+https://owen-wilson-wow-api.herokuapp.com/
 
-### Advanced Configuration
+## MVP
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-option to search for movie posters
 
-### Deployment
+-option to search for shows/movies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## POST-MVP
+-ability to stream movies directly from the app
 
-### `npm run build` fails to minify
+-monetize affiliate-links 
+## Wireframe mockup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+(cellphone)
+![Screenshot (208)](https://user-images.githubusercontent.com/25209405/184566747-655ebb1a-2124-4c30-807e-1eb7cdd6e32b.png)
+
+(tablet)
+![Screenshot (207)](https://user-images.githubusercontent.com/25209405/184566745-638d95e3-3587-42c9-ac2d-db710a95fda8.png)
+
+(desktop)
+![Screenshot (209)](https://user-images.githubusercontent.com/25209405/184566753-670cfc21-2a43-4673-a0da-9dfef8062de0.png)
+
+## Component Hierarchy
+
+![comp](https://user-images.githubusercontent.com/25209405/184565932-c1a7e0cb-cc15-493c-9289-767a43c0f149.png)
+
+
+## Tech Stack
+
+
+
+![REACTTT](https://user-images.githubusercontent.com/25209405/184563664-55f5afa9-4653-438b-963a-0676f58e7b64.jpg)
+![js](https://user-images.githubusercontent.com/25209405/184563667-2203d41d-39a0-4b0e-9b8d-8fa8a8f591bd.png)
+![html5](https://user-images.githubusercontent.com/25209405/184563674-eeee1f4b-19a2-496a-8098-f58887cc228d.png)
+![css3](https://user-images.githubusercontent.com/25209405/184563717-d0e9699c-9637-4763-8e38-e71edb86f562.png)
+
+## 🔗 Links
+Built by 
+
+https://github.com/JohnsHarrison
+
+
+https://github.com/divinedouggy
+
+
+
+https://github.com/aduratovic
