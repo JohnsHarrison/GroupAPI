@@ -7,14 +7,9 @@ import MoviePosters from './Components/MoviePosters'
 import Streaming from './Components/Streaming';
 import Streams from './Components/Streams';
 import ButtonWilson from './Components/ButtonWilson';
-<<<<<<< HEAD
 import About from './Components/About';
 import NotFound from './Components/NotFound';
-=======
 import Trailer from './Components/Trailers';
-
-
->>>>>>> accc737793b92c8ead66a54a3f072bfc89838d42
 
 function App() {
 
