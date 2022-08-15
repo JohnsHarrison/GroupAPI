@@ -9,8 +9,15 @@ const [word,setWord] = useState('')
 
 
 async function handleClick(word){
+   if(word === ''){
+   return alert("Please enter a word and try again")
+   }
    const response= await (await getStreamingID(word)).data.title_results
-   setResults(response)
+  
+   if(!response[0]){
+    return alert("Please check your spelling and try again")
+   }
+   setResults(response) 
 }
 
 
@@ -24,7 +31,7 @@ async function handleClick(word){
             <button onClick={()=>{
                 handleClick(word)
             }}>Search Streaming</button>
-             <h1> {results === null ? null : "Did you mean?" } </h1>
+             <h1> {results === null || results !== [] ? null: "Did you mean?" } </h1>
             
              {
                 results === null ? null :
