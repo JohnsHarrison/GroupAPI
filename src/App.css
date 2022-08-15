@@ -373,3 +373,134 @@ iframe {
   height: 95%;
   cursor: pointer;
 }
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+.header a{
+  height: 2em;
+    width: 5em;
+    padding: 10px;
+    margin: 5px;
+}
+
+  .pcontainerhome1{
+    width: 90%;
+  }
+  
+  .pcontainerhome2{
+    width: 90%;
+  }
+
+  .pcontainerhome3{
+    width: 90%;
+  }
+
+  .pcontainerhome4{
+    width: 90%;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  .WilsonContainer{
+    top: 86px;
+    height: 92.7vh;
+  }
+
+  .OwenWilson{
+    width: 90%;
+
+  }
+  
+}
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+.header a{
+padding: 0;
+font-size: 10px;
+height: 4em;
+width: 10em;
+margin: 3px;
+}
+
+nav{
+  height: 100px;
+  flex-wrap: wrap;
+}
+
+.textlogo{
+  width: 100%;
+}
+
+.pcontainerhome1{
+width: 80%;
+}
+
+.pcontainerhome2{
+  width: 80%;
+}
+
+.pcontainerhome3{
+    width: 80%;
+}
+
+.pcontainerhome4{
+      width: 80%;
+}
+
+.home p{
+  font-size: 30px;
+}
+
+.MovieContainerjh{
+  flex-direction: column;
+  
+}
+
+.MovieContainer2jh{
+  flex-direction: column;
+  
+}
+.currentimgjh{
+  width: 80%;
+}
+
+.Infojh{
+  width: 100%;
+  font-size: 1rem;
+}
+
+iframe {
+  
+  transform: scale(0.38, 0.5);
+ 
+  transform-origin: top left;
+  
+}
+.trailer{
+  overflow: hidden;
+  height: 550px;
+}
+
+.ServiceContainerjh{
+  width: 35%;
+}
+
+.WilsonContainer{
+  top: 106px;
+}
+
+.OwenWilson{
+  width: 90%;
+}
+
+}
