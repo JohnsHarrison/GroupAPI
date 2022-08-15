@@ -27,7 +27,7 @@ async function handleClick(word){
             <button onClick={()=>{
                 handleClick(word)
             }}>Search Streaming</button>
-             <h1> {results === null || results !== [] ? null: "Did you mean?" } </h1>
+             <h1> {results === null ? null: "Did you mean?" } </h1>
             
              {
                 results === null ? null :
