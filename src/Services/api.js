@@ -34,7 +34,7 @@ return response
 
 //owen wilson
 export async function getWow(){
-const response = await axios.get('https://owen-wilson-wow-api.herokuapp.com/wows/random')
+const response = await axios.get('https://owen-wilson-wow-api.onrender.com/wows/random')
 return response
 }
 
